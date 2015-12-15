@@ -1,0 +1,11 @@
+blog_add_post:
+    path:       /post/add
+    defaults:   { _controller: AppBundle:Default:add }
+
+blog_edit_post:
+    path:       /post/edit/{id}
+    defaults:   { _controller: AppBundle:Default:edit }
+
+blog_delete_post:
+    path:       /post/delete/{id}
+    defaults:   { _controller: AppBundle:Default:delete }
