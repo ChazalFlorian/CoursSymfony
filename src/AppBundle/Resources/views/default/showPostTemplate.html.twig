@@ -1,0 +1,14 @@
+{% for post in posts %}
+    <article>
+        {% if post.isPublished == true %}
+            <div class="article-title">
+                <h1>{{ post.title }}</h1>
+            </div>
+            <div class="article-content">
+            <span>
+                {{ post.body }}
+            </span>
+            </div>
+        {% endif %}
+    </article>
+{% endfor %}

@@ -9,3 +9,11 @@ blog_edit_post:
 blog_delete_post:
     path:       /post/delete/{id}
     defaults:   { _controller: AppBundle:Default:delete }
+
+blog_show_post:
+    path:       /posts
+    defaults:   { _controller: AppBundle:Default:show }
+
+blog_search_post:
+    path:       /search
+    defaults:   [ _controller: AppBundle:Default:search]

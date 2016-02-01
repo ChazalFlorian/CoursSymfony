@@ -1,1 +1,24 @@
-<span>Cette page modifie le titre de l'article {{ id }}</span>
+<span>Ceci est la page de modification d'article {{ id }}</span>
+{{ form_start(form) }}
+<table>
+    <tr>
+        <td>{{ form_label(form.title, 'Titre de l\'article') }}</td>
+        <td>{{ form_widget(form.title) }}</td>
+    </tr>
+    <tr>
+        <td>{{ form_label(form.body, 'Contenu') }}</td>
+        <td>{{ form_widget(form.body) }}</td>
+    </tr>
+    <tr>
+        <td>{{ form_label(form.category, 'Catégorie') }}</td>
+        <td>{{ form_widget(form.category) }}</td>
+    </tr>
+    <tr>
+        <td>{{ form_label(form.isPublished, 'Afficher ?') }}</td>
+        <td>{{ form_widget(form.isPublished) }}</td>
+    </tr>
+    <tr>
+        <td>{{ form_widget(form.Publier) }}</td>
+    </tr>
+</table>
+{{ form_end(form) }}
